@@ -1,0 +1,49 @@
+*To create a repo and commit file*
+
+1-create Repo on github.com 
+2-create new folder
+3- open the folder then open terminal
+4-git init
+5-touch steps
+6-git add .
+7- git commit -m "write msg here"
+8- git branch -M main
+9-git remote add origin repo URL
+10- git push origin main
+
+*to create new branch*
+1-open terminal
+2-git branch --------------> toknow exists branches
+3- git branch dev
+4-git branch test
+
+*to add files in dev branch*
+1-git checkout dev
+2-touch f1 f2
+3-git add .
+4- git commit -m "write msg here"
+5- git push origin dev
+
+*to merge branches*
+1-git checkout main
+2-git merge dev
+
+*to remove / delete branch *
+A) remotelly
+git push origin :dev
+B) Locally
+git branch -D develop
+
+*create an annoted tag*
+1-git tag -a v1.1 -m "tag msg"
+2-git push --tag
+
+*list tags*
+git tag 
+
+
+*to remove / delete tag *
+A) remotelly
+git push origin --delete v1.1
+B) Locally
+git tag -d v1.1
